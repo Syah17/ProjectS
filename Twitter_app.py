@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jun 12 15:45:04 2020
-
-@author: HP PC
-"""
-
 from flask import Flask, request, render_template
 import Twitter_Sentiment_Analysis
 
