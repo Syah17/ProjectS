@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jun 10 12:35:30 2020
-
-@author: HP PC
-"""
 from tweepy import API 
 from tweepy import OAuthHandler
 from io import BytesIO
