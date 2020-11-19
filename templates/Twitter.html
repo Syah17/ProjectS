@@ -15,14 +15,15 @@
 
 <style>
 h1 {text-align: center;}
+h5 {
+  text-align: center;
+  color:red;
+}
 img {
   border: 5px solid #555;
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  width: 700;
-  height: 300;
-  
+  margin-right: auto;  
 }
 
 body {
@@ -54,24 +55,31 @@ function showImage() {
 </script>
 <body>
  <div class="login">
-    <center><img src="https://assets.teenvogue.com/photos/56b4f21327a088e24b967bb6/16:9/w_2560%2Cc_limit/twitter-gifs.gif" width="300" height="200"> </center>
-	<h1><b><u>Twitter Sentiment Analysis</u></b></h1>
+    <center><img src="https://assets.teenvogue.com/photos/56b4f21327a088e24b967bb6/16:9/w_2560%2Cc_limit/twitter-gifs.gif" width="600" height="200" align="left"> </center>
+    <br>
+    <br>
+  <h1><b>Twitter Sentiment Analysis</b></h1>
+  <h5>(Tips:Please Enter Keyword to Search real-time tweets and press visualize to see data representation)</h6>
+
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('keyword')}}"method="post">
     <center>
-        <b><label for="keyword" style="color:blue;">Twitter Handle @</label></b>
-    	<input type="text" name="keyword" placeholder="word" required="required" />
+        <b><label for="keyword" style="color:black;">Twitter Query</label></b>
+      <input type="text" name="keyword" placeholder="word" required="required" />
                 
         <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
-	<button type="submit" class="btn btn-primary btn-block btn-large" onclick="showImage();" >Visualize</button>
+  <button type="submit" class="btn btn-primary btn-block btn-large" onclick="showImage();" >Visualize</button>
     </center>
 
    <br>
    <br>
-   
+   <br>
+   <br>
+   <br>
+  
    <b><u>{{Top_Five_Tweets}}</u></b>
-   {% for s in prediction %}
-        <p>{{s}}<p>
+   {% for z in prediction %}
+        <p>{{z}}<p>
    {% endfor %}
    <br>
 
