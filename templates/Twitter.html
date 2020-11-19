@@ -43,14 +43,6 @@ text-align:center;
    }  
 </style>
 
-<script>
-function showImage() {
-    document.getElementById('image').style.visibility="visible";
-    document.getElementById('image2').style.visibility="visible";
-    document.getElementById('image3').style.visibility="visible";
-}  
-</script>
-
 <body>
  <div class="login">
     <center><img src="https://assets.teenvogue.com/photos/56b4f21327a088e24b967bb6/16:9/w_2560%2Cc_limit/twitter-gifs.gif" width="300" height="200"> </center>
@@ -72,21 +64,20 @@ function showImage() {
         <p>{{s}}<p>
    {% endfor %}
    <br>
-   <button type="submit" class="btn btn-primary btn-block btn-large" onclick="showImage();" >Display plots</button>
+
    <br></br>
    <b><u>{{polatiry_plot}}</u></b>
    <br></br>
-   <img src="data:image/png;base64,{{ plot_polarity }}" id="image2" width="500" height="400" style="visibility:hidden" /> <!--style="visibility:hidden"-->
+   <img src="data:image/png;base64,{{ plot_polarity }}" id="image2" width="500" height="400" style="visibility:visible" /> <!--style="visibility:hidden"-->
    <br></br>
    <b><u>{{Word_cloud}}</u></b>
    <br></br>
-   <img src="data:image/jpeg;base64,{{ plot }}" id="image" width="500" height="400" style="visibility:hidden" /> <!--style="visibility:hidden"-->
+   <img src="data:image/jpeg;base64,{{ plot }}" id="image" width="500" height="400" style="visibility:visible" /> <!--style="visibility:hidden"-->
    <br></br>
    <b><u>{{Sentiment}}</u></b>
    <br></br>
-   <img src="data:image/jpeg;base64,{{ plot_sentiment }}" id="image3" width="500" height="400" style="visibility:hidden" /> <!--style="visibility:hidden"-->
+   <img src="data:image/jpeg;base64,{{ plot_sentiment }}" id="image3" width="500" height="400" style="visibility:visible" /> <!--style="visibility:hidden"-->
 
-   <div class="footer">Created By: Jayesh Kamat</div>
 </div>
 </form>
  </div>
