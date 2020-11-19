@@ -54,7 +54,7 @@ class TweetAnalyzer():
             return -1
 
     def tweets_to_data_frame(self, tweets):  
-        df = pd.DataFrame([tweet.full_text for tweet in tweets], columns=['tweets'])
+        df = pd.DataFrame([tweet.full_text for tweet in tweets], columns=['tweets','date','likes','sentiment'])
 
         df['id'] = np.array([tweet.id for tweet in tweets])
         df['len'] = np.array([len(tweet.full_text) for tweet in tweets])
