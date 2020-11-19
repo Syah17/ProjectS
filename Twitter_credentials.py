@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jun 10 14:40:14 2020
-
-@author: HP PC
-"""
-
 ACCESS_TOKEN="1283499122532552704-BkuX2iMiTFD9N6Kg9f5YokzS53KvQW"
 ACCESS_TOKEN_SECRET="4naOITkGeQk3DSIJli9fjsyKx9P36BaDiYbpQa9IBqCZf"
 CONSUMER_KEY="q6eKdM3dsIpyzi6AVAbogo6RM"
