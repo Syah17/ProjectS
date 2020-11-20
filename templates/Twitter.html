@@ -19,6 +19,9 @@ h5 {
   text-align: center;
   color:red;
 }
+h4 {
+  text-align: center;
+}
 img {
   border: 5px solid #555;
   display: block;
@@ -77,7 +80,7 @@ function showImage() {
    <br>
    <br>
   
-   <h5><b><u>{{Top_Five_Tweets}}</u></b><h5>
+   <h4><b><u>{{Top_Five_Tweets}}</u></b><h4>
    {% for s in prediction %}
         <p>{{s}}<p>
    {% endfor %}
