@@ -20,8 +20,8 @@ def keyword():
         
     word_cld=Twitter_Sentiment_Analysis.plotting.show_wordcloud(word['tweets'])
     negative_positive_plot=Twitter_Sentiment_Analysis.plotting.sentiment(word)
-    
-    return render_template('Twitter.html',prediction=word['tweets'].head(),Top_Five_Tweets="Raw Tweets:",plot=word_cld,Word_cloud="Word Cloud for common words used in the Tweets",plot_polarity=polarity,polatiry_plot="Subjectivity against Polarity",plot_sentiment=negative_positive_plot,Sentiment="Count of Positive, Negative and Neutral Tweets")
+    pie_chart=Twitter_Sentiment_Analysis.plotting.pie(word) 
+    return render_template('Twitter.html',prediction=word['tweets'].head(),Top_Five_Tweets="Raw Tweets:",plot=word_cld,Word_cloud="Common words used",plot_polarity=polarity,polatiry_plot="Subjectivity against Polarity",plot_sentiment=negative_positive_plot,Sentiment="Tweets Sentiment")
     
 
 
