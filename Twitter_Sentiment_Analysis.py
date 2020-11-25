@@ -99,7 +99,7 @@ class plotting():
         img = BytesIO()
         stopwords = set(STOPWORDS)
         wd = WordCloud(
-        background_color='white',
+        background_color='black',
         stopwords=stopwords,
         max_words=200,
         max_font_size=40, 
